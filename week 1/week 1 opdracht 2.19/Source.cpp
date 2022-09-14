@@ -23,24 +23,24 @@ int main(void)
 
 	int smallest;
 	smallest = a;
-	if (b < smallest){
-		b = smallest;
+
+	if (b < smallest) {
+		smallest = b;
 	}
-	if (c < smallest){
-		c = smallest; 
+	if (c < smallest) {
+		smallest = c;
 	}
-			printf("Smallest is %d\n", smallest);
-		
-			int largest;
-			largest = a;
-			if (b > largest){
-				largest = b;
-			}
-				if (c > largest){
-					largest = c;
-				}
-				printf("Largest is %d", largest);
-			
-	}
+	printf("smallest is %d\n", smallest);
 
 	
+	int largest;
+	largest = a;
+
+	if (b > largest) {
+		largest = b;
+	}
+	if (c > largest) {
+		largest = c;
+	}
+	printf("largest is %d", largest);
+}
